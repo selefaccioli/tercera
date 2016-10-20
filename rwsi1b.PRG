@@ -2,6 +2,9 @@ INICIAL
 RAMA2 
 
 
+PROBANDO BITBUCKET
+
+
 *********************************************************************************************************************
 * Trigger de indicadores CORTASSA
 * Si falla el INSERT que actualiza RWS_LOGS se almacena el mismo en una tabla DBI con la
@@ -49,6 +52,9 @@ IF .NOT. (TYPE("m.EsSincroni") = "L" .AND. m.EsSincroni) .AND. .NOT. (TYPE("m.gl
 			IF TXNLEVEL() > 0 .OR. m.Noma = "AUTOMATA" .OR. (VARTYPE(m.aAutoma) = "L" .AND. m.aAutoma)
 				m.plAsincronico = .NOT. tlAsincro
 			ENDIF 
+
+
+******************bitbucket
 
 			DO CASE 
 				CASE UPPER(m.tcTabla) == "STOCK_DE" .AND. JUSTSTEM(DBF()) = "STOCK_DE" .AND. DEPOSITO=100
