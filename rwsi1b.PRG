@@ -1,6 +1,5 @@
 INICIAL
-RAMA1
-
+RAMA2 
 
 
 *********************************************************************************************************************
@@ -29,6 +28,8 @@ IF .NOT. (TYPE("m.EsSincroni") = "L" .AND. m.EsSincroni) .AND. .NOT. (TYPE("m.gl
 	plErrorPath      	= .F. 
 	m.plAsincronico    	= .F.
 	m.tcTabla 			= ALLTRIM(m.tcTabla)
+
+*************HOLA MUNDO
 
 	IF UPPER(ALLTRIM(PROGRAM(1))) <> "SINCRONI" .AND. (VARTYPE(m.gcRWSVar_SINBUS) <> "L" .OR. .NOT. m.gcRWSVar_SINBUS)
 
